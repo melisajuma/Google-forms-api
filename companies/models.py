@@ -11,13 +11,17 @@ class someModel(models.Model):
         crypto_knowledge=models.CharField(help_text='How much do you know about cryptocurrencies (Bitcoin,Etherium,etc)?')
 	
     '''
-    name=models.CharField(max_length=250)
+    field_of_study=models.CharField(max_length=250,default='Nan')
     age_group=models.CharField(max_length=50)
     crypto_knowledge=models.CharField(max_length=250)
+    crypto_use=models.TextField(max_length=250,default='Nan')
     crypto_use_followup=models.TextField(max_length=250)
     crypto_discourage=models.CharField(max_length=250)
     crypto_discourage_other=models.TextField(max_length=250)
     crypto_encourage=models.TextField(max_length=250)
+    crypto_encourage_other=models.TextField(default='Nan',max_length=250)
     crypto_value=models.CharField(max_length=250)
+
+    
 
     

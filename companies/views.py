@@ -12,11 +12,12 @@ from .sheet import form_responses, process_response
     #serializer_class = ProfileSerializer
 def homepage(request):
     '''
-    assuming we make the api call hapa
+    assuming we make the api call
     
     '''
     # form_data=form_responses()
-    form_data=form_responses()
-
-    return render(request,'index.html',{'data':form_data})
+    # form_data=form_responses()
+    # response = process_response()
+    res= someModel.objects.all()
+    return render(request,'index.html',{'data':res})
     
